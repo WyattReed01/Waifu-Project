@@ -1,72 +1,126 @@
 *{
 padding: 0;
 margin: 0%;
+box-sizing: border-box;
+--black: #333;
+--cream: #ffeccc;
+--red: red;
 }
 
 body{
-    background-image: radial-gradient(#420d6d 20%, transparent 20%),
-    radial-gradient(#fafafa 20%, transparent 20%);
-    background-color: rgba(160, 135, 242, 0.698);
-    background-position: 0 0, 50px 50px;
-    background-size: 100px 100px;
-    height: 200px;
-    width: 100%;
-}
-
-#logo{
     
-    font-size: 5rem;
+    top: 0;
+    bottom: 0%;
+    margin: 0;
+    padding: 0;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    border-top: 15px solid red;
-    border-bottom: 15px solid red;
-    padding-bottom: .5rem;
-    padding-top: .5rem;
+    background: url('./Japan-night.jpeg') no-repeat;
+    height: 100vh;
+    resize: both;
+    background-size: cover;
 }
 
-img {
-    width:auto;
-    height:auto;
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    background: var(--black)
 }
 
-.waifuImage{
-    display: block; 
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    min-height: 720px;
-    max-height: 720px;
-    padding: 3px;
-    border: 3px solid pink;    
-}
-
-#waifuPhoto{
-    text-align: center;
-
-}
-
-#text{
-
-    color: rgb(255, 255, 255);
-    padding-bottom: 1.5rem;
-    padding-top: 1.5rem;
-}
-
-#randombtn{
-
-    background: cornflowerblue;
-}
-
-#uniformbtn{
-
-    background: cornflowerblue;
+#buttonlist{
+    display: flex;
+    padding: 1.5rem;
 }
 
 #maidbtn{
-
-    background: cornflowerblue;
+    color: violet;
+    background-color:gray;
+    margin: 0 .5rem;
+    padding: .5rem;
+    transition: 0.5s padding ease;
+    font-family: 'Fredoka One', cursive;
 }
 
-#buttons{
-padding-top: 2.5rem;
-padding-bottom: 2.5rem;
+#randombtn{
+    color: violet;
+    background-color:gray;
+    margin: 0 .5rem;
+    padding: .5rem;
+    transition: 0.5s padding ease;
+    font-family: 'Fredoka One', cursive;
 }
+
+#uniformbtn{
+    color: violet;
+    background-color:gray;
+    margin: 0 .5rem;
+    padding: .5rem;
+    transition: 0.5s padding ease;
+    font-family: 'Fredoka One', cursive;
+}
+
+#maidbtn:hover{
+    cursor: pointer;
+    padding: .3rem .9rem;
+}
+
+#randombtn:hover{
+    cursor: pointer;
+    padding: .3rem .9rem;
+}
+
+#uniformbtn:hover{
+    cursor: pointer;
+    padding: .3rem .9rem;
+}
+
+#logo{
+    display: flex;
+    margin: 1rem;
+    font-size: 2.5rem;
+    color: var(--cream);
+    border-bottom: 2px solid rgba(237, 235, 168, 0.646);
+}
+
+
+.waifuImage{
+    width: 50rem;
+    height: 50rem;
+
+    margin-bottom: 15rem;
+    padding: 3px;
+    border: 5px solid pink;
+}
+#waifuImage{
+
+    
+    width: 100%;
+
+}
+
+#waifuPhoto{ /*this is the description text, not the photo*/
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    font-size: 2rem;
+    font-family: 'Philosopher', sans-serif;
+    color: var(--cream);
+}
+
+/* #text{
+    color: rgb(208, 102, 102);
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+} */
+
+
+#highlight{
+    color: rgb(235, 125, 219);
+    font-style: italic;
+    font-family: 'Philosopher', sans-serif;
+}
+
